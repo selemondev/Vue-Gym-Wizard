@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins min-h-screen w-full;
+    }
+}
+
+@layer components {
+    .li-tag {
+        @apply font-bold p-2 cursor-pointer hover:text-purple-500 md:text-lg text-base;
+    }
+
+    .active {
+        @apply text-purple-500
+    }
+}
